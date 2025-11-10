@@ -1,0 +1,23 @@
+{
+  "name": "singapore-traffic-map",
+  "version": "1.0.0",
+  "description": "Singapore Causeway Traffic Map using LTA DataMall API",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  },
+  "keywords": [
+    "traffic",
+    "singapore",
+    "map",
+    "leaflet",
+    "causeway",
+    "lta",
+    "datamall"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
