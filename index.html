@@ -67,7 +67,9 @@
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
   <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
   
-  <script>
+ <script>
+  // Wait for the DOM to be fully loaded
+  document.addEventListener('DOMContentLoaded', function() {
     // Global variables
     let timestampDiv;
     let legendControl;
@@ -358,6 +360,22 @@
 
     // Initial load
     setTimeout(loadTrafficData, 100);
-  </script>
+  });
+
+  // Make toggleLegend function globally available
+  window.toggleLegend = function() {
+    const legendDiv = document.getElementById('legend-box');
+    if (legendDiv) {
+      const container = legendDiv.parentElement;
+      if (container) {
+        if (container.style.display === 'none') {
+          container.style.display = '';
+        } else {
+          container.style.display = 'none';
+        }
+      }
+    }
+  };
+</script>
 </body>
 </html>
