@@ -1,11 +1,7 @@
-[build]
+  [build]
   publish = "."
 
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
-
-[functions]
-  # Remove the node_bundle line or use the correct syntax
-  # node_bundle = true  # ← Remove this line
