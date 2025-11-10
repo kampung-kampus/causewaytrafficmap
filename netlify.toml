@@ -7,4 +7,5 @@
   status = 200
 
 [functions]
-  node_bundle = true
+  # Remove the node_bundle line or use the correct syntax
+  # node_bundle = true  # ← Remove this line
